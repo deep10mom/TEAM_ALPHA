@@ -1,0 +1,11 @@
+scheduling meeting :
+1) Scheduling a time for the meeting.
+2) Sending notifications to the employee about the schedulued meeting.
+
+team meeting:
+1. Should get notification about meeting
+
+
+
+
+Scheduling a meeting, team meeting, planned leaves:  to be shown in a calendar.
