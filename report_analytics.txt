@@ -1,4 +1,0 @@
-Report Analytics:
-
-1) we can plot a graph between project and time where project is the type of projects asigned and time is no. of days taken by employee to complete that project.
-2)deadlines met and exceeded .
