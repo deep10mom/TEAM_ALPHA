@@ -1,0 +1,5 @@
+This contains the details of the employee. Along with a dashboard that contains:
+1.project deadlines
+2.schedule a meeting,leaves,etc
+3.team meetings
+4.report analytics
