@@ -1,0 +1,5 @@
+This webpage contains the details of the company. All the pictures, work policies, careers, etc.
+It has login and sign up on the right corner of the page.
+
+1.login
+2.signup
