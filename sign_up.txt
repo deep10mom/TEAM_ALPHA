@@ -1,9 +1,0 @@
-employee_id
-employee name
-password
-department
-role
-manager
-sign up
-
-if successful go to login
