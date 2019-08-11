@@ -20,5 +20,5 @@ function login(empid:string,pass:string) : string
     console.log("Invalid Credentials")
     return "";
 }
-var obj= login("Shoaib12","shoaib12");
+var obj= login("Shoaib12","captain12");
 console.log(obj);
