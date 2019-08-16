@@ -1,0 +1,32 @@
+#boxid{
+    border-radius: 25px;
+    border: 2px solid #609;
+    padding: 20px; 
+    width: 200px;
+    height: 5px;
+    
+}
+.Div{
+    margin-left: 38%;
+}
+h3{
+    color: #6495ed;
+    padding-left: 10px; 
+}
+h2{
+    padding-left: 60px;    
+    color: #6495ed;
+}
+#btn
+{
+    background-color: #4CAF50; /* Green */
+  border: 2px solid #609;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+    border-radius: 25px;
+    width: 250px;
+}

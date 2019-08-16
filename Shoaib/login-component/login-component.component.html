@@ -1,0 +1,12 @@
+<div class="Div">
+<h2>Login Form</h2>
+<h5 >{{LoginStatus}}</h5>
+
+<div *ngIf="show; else error"> <img src="/assets/success.png" /></div>
+<ng-template #error>
+       <div><img src="/assets/login.jpg" height="25%" width="25%"/> </div> 
+</ng-template>
+<h3>Username : </h3><input id="boxid" type="text" [(ngModel)]="Username"  placeholder="Enter Username"/>
+<h3>Password :</h3> <input id="boxid" type="password" [(ngModel)]="Password" placeholder="Enter Password"/>
+<br><br><button id="btn" (click)="Login(Username,Password)">Login</button>
+ </div>
