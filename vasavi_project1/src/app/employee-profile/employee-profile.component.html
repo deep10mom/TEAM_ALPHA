@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Employee Profile</div>
+        <div class="panel-body">
+     
+     
+<span class="text-success"><b>EmployeeNo:</b>{{Empno}}</span>
+<br>
+<span class="text-success"><b>EmpName:</b>{{Empname}}</span>
+<br>
+<span class="text-success"><b>Phonenumber:</b>{{Phonenumber}}</span>
+<br>
+<span class="text-success">{{Projectsassigned}}</span>
+<h3>Projects assigned</h3>
+<ul>
+<li *ngFor="let project of Projectsassigned"><span>Project Name:{{ project.proj }}</span> <br><span>Allocated time:{{ project.time }} hours</span></li>
+</ul>
+
+
+
+<button type="button" class="btn btn-primary" (click)=submit()>addProjects</button>
+<br>
+<br>
+
+
+
+
+<div *ngIf="show" >
+<p>ProjectName:</p>
+    <input type="text" [(ngModel)]="projectname">
+<br><br>
+<p>Hours Allocated:</p>
+<input type="text" [(ngModel)]="timehours">
+<br><br>
+
+<button type="button" class="btn btn-primary" (click)=addProjects()>Submit</button>
+</div>
+</div>
+</div>
+</div>
