@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<app-navigation></app-navigation>
+<!-- <app-navigation></app-navigation> -->
+<div class="row"></div>
+<div class="panel panel-default" style="padding:5%;">
+    
+    <div class="panel-heading">
+            <div class="row">
+                    <div class="col-sm-4">
+                         TaskList
+                         </div>
+                         <div class="col-sm-4">
+                                
+                             </div>
+                             <div class="col-sm-4">
+                                    <button type="button" class="btn btn-primary" (click)="addTasks('Login','8hrs','not completed')">Add</button>
+                                 </div>
+            </div>
+    </div>
+    <div *ngFor="let p of tasks;index as i">
+        <div class="panel-body">
+            <div class="well">
+            <div class="row">
+                <div class="col-sm-4">
+                   
+                   {{p.taskname}}
+                </div>
+                <div class="col-sm-4">
+                        {{p.timeallocated}}
+                    
+                 </div>
+                 <div class="col-sm-4">
+                        {{p.status}}
+                
+                 </div>
+            </div>
+            </div>
+        </div>
+                </div> 
+
+  </div>
+  <footer>
+      <app-footer></app-footer>
+  </footer>
