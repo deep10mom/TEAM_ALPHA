@@ -1,0 +1,23 @@
+<div id="d">
+<div id="p">
+    
+<h1>SignUp</h1>
+<!--[]=>binds ts - to - html
+()=>binds  html -to - ts
+
+<input type="text" [value]="Username"/> ..... this is attribute binding it only gets data from ts to html but reverse is not true.
+
+-->
+<form ngNativeValidate>
+<h3>Enter name:</h3><input type="text" ([ngModel])="Name" id="user" name="nm">
+<h3>Enter email:</h3><input type="email"([ngModel])="Email"id="user" name="em" required>
+<h3>Enter contact:</h3><input type="text"([ngModel])="Contact"id="user" name="con">
+<h3>Enter username:</h3><input type="text"([ngModel])="Username"id="user" name="user">
+<h3>Enter password:</h3><input type="password"([ngModel])="Password"id="user" name="pwd"><br><br>
+<button  (click)="sign(Name,Email,Contact,Username,Password)" id="user">Submit</button>
+</form>
+<h2 style="color: green;">{{status}}</h2>
+
+</div>
+
+</div>

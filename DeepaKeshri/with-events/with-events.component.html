@@ -1,0 +1,17 @@
+
+
+  <h1>LOGIN</h1>
+<!--ngModel comes with formsModule so first import formsModule.we use MVVM.to facilate real time chnages in html.Athis is called 2 way binding.
+Any change in html is refelceted in typescript.
+
+-->
+<h3 style="color: red;">Username</h3><input type="text" id="user" [(ngModel)]="Username" value="" placeholder="Enter user name"/>
+<h3 style="color: red;">Password:</h3><input type="password" [(ngModel)]="Password" id="user" /><br><br>
+<button  (click)="Login(Username,Password)" id="btn">Login</button><br><br><br>
+<img  id="image" src='/assets/download.png'/>
+<img id="image" src='/assets/login.png' *ngIf="check;else failed"/>
+<ng-template #failed>
+    <img id="image" src='/assets/images.png'/>
+</ng-template>
+<h3 >{{Status}}</h3>
+

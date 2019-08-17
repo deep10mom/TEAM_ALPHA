@@ -1,0 +1,23 @@
+<p>for works!</p>
+
+<input type="text" [(ngModel)]="person" />
+<button (click)='AddPerson(person)'>Add to List</button>
+<ul [ngSwitch]="person">
+
+        <li *ngSwitchCase="'Mohan'">Hello Mohan</li>
+        <li *ngSwitchCase="'Sohan'">Hello Sohan</li>
+        <li *ngSwitchCase="'Vijay'">Hello Vijay</li>
+        <li *ngSwitchCase="''">
+                <ul *ngFor="let p of people;index as i">
+                <li>{{i+1}}. {{p}}</li>
+                </ul>
+        </li>
+        <li *ngSwitchDefault >not in list
+            
+        </li>
+    </ul>
+    
+
+
+
+
