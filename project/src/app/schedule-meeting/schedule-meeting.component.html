@@ -1,0 +1,109 @@
+<h2 style="color: red">SCHEDULE MEETING</h2>
+<div class="form-group">
+        <label for="Name">Project Name</label>
+        <input type="text" class="form-control" id="Name" [(ngModel)]="Name">
+      </div>
+      <div class="form-group">
+            <label for="Time">LogTime</label>
+            <input type="text" class="form-control" id="Time" [(ngModel)]="Time">
+          </div>
+          <div class="form-group">
+                <label for="Name">LogoutTime</label>
+                <input type="text" class="form-control" id="Name" [(ngModel)]="Time2">
+              </div>
+              <div class="form-group">
+                    <label for="Name">Date</label>
+                    <input type="date" class="form-control" id="Name" [(ngModel)]="Date">
+                  </div>
+                  <div class="form-group">
+                        <label for="Name">EMP ID</label>
+                        <input type="text" class="form-control" id="Name" [(ngModel)]="Empid">
+                      </div>
+                      <div class="form-group">
+                            <label for="Name">EMP Name</label>
+                            <input type="text" class="form-control" id="Name" [(ngModel)]="EmpName">
+                          </div>
+                          <div class="form-group">
+                                <label for="Name">VENUE</label>
+                                <input type="text" class="form-control" id="Name" [(ngModel)]="Venue">
+                              </div>
+                <button class="btn btn-success" (click)="add(Name,Venue,Time,Time2,Empid,EmpName)">ADD</button>
+
+            <br><br><br>
+      
+
+
+
+
+
+
+
+
+
+<!-- Enter Poject Name:<input type="=text" [(ngModel)]="Name">
+Enter Logtime:<input type="text" [(ngModel)]="Time">
+Enter Logouttime:<input type="text" [(ngModel)]="Time2">
+Enetr date:<input type="text" [(ngModel)]="Date">
+Enter EmpId:<input type="text" [(ngModel)]="Empid">
+Enter EmpName:<input type="text" [(ngModel)]="EmpName">
+Enter venue:<input type="text" [(ngModel)]="Venue"> -->
+
+<!-- <button (click)="add(Name,Venue,Time,Time2,Empid,EmpName)">ADD</button> -->
+
+<table class="table table-hover">
+        <thead>
+        <tr>
+          <th>Project Name</th>
+          <th>Time</th>
+          <th>Time log out</th>
+          <th>Venue</th>
+        </tr>
+    </thead>
+        
+    <tbody>
+        <tr>
+            <td>{{meeting_details[0].project}}</td>
+            <td>{{meeting_details[0].meeting_login_time}}</td>
+            <td>{{meeting_details[0].meeting_logout_time}}</td>
+            <td>{{meeting_details[0].meeting_venue}}</td>
+          
+        </tr>
+
+        <tr>
+                <td>{{meeting_details[1].project}}</td>
+                <td>{{meeting_details[1].meeting_login_time}}</td>
+                <td>{{meeting_details[1].meeting_logout_time}}</td>
+                <td>{{meeting_details[1].meeting_venue}}</td>
+              
+            </tr>
+            <tr>
+                    <td>{{meeting_details[2].project}}</td>
+                    <td>{{meeting_details[2].meeting_login_time}}</td>
+                    <td>{{meeting_details[2].meeting_logout_time}}</td>
+                    <td>{{meeting_details[2].meeting_venue}}</td>
+                  
+                </tr>
+                <tr>
+                        <td>{{meeting_details[3].project}}</td>
+                        <td>{{meeting_details[3].meeting_login_time}}</td>
+                        <td>{{meeting_details[3].meeting_logout_time}}</td>
+                        <td>{{meeting_details[3].meeting_venue}}</td>
+                      
+                    </tr>
+                    <tr>
+                            <td>{{meeting_details[4].project}}</td>
+                            <td>{{meeting_details[4].meeting_login_time}}</td>
+                            <td>{{meeting_details[4].meeting_logout_time}}</td>
+                            <td>{{meeting_details[4].meeting_venue}}</td>
+                          
+                        </tr>
+                        <tr>
+                                <td>{{meeting_details[5].project}}</td>
+                                <td>{{meeting_details[5].meeting_login_time}}</td>
+                                <td>{{meeting_details[5].meeting_logout_time}}</td>
+                                <td>{{meeting_details[5].meeting_venue}}</td>
+                              
+                            </tr>
+                            </tbody>
+    
+</table> 
