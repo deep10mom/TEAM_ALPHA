@@ -1,0 +1,29 @@
+
+
+
+
+<p>registration works!</p>
+
+<form ngNativeValidate>
+
+<p>Username:</p><input type="text" class="button" [(ngModel)]="Username" value=""
+ placeholder="Enter Username" required >
+<br>
+<p>{{ Username }}</p>
+<p>Password:</p><input type="password" [style.background]="color" class="button" [(ngModel)]="Password" value="" placeholder="Enter password" required >
+<br>
+<p>Confirm Password:</p><input type="password" [ngStyle]="propstyle" class="button" [(ngModel)]="co_password" value="" placeholder="Enter password" required >
+<br>
+<br>
+<button class="button" (click)="Register()">Register</button>
+<br>
+</form>
+
+<img src="/assets/country.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236">
+
+<!--<img src='/assets/img1.jpg'/>
+<p>{{LoginStatus}}</p>-->
+
+
+
+

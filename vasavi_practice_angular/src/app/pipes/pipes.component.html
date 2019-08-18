@@ -1,0 +1,39 @@
+
+
+
+
+
+<p>pipes works!</p>
+{{title|reverse}}
+<br>
+
+<input type="text" [(ngModel)]="title"/>
+
+<div *ngIf="(title|reverse);else elseTemplate">
+
+
+    <h5>Reversed string:<span class="text-success">{{title}}</span></h5>
+
+</div>
+
+
+<ng-template #elseTemplate>
+    <h5>Reversed string:<span class="text-danger">{{title}}</span></h5>
+
+</ng-template>
+
+<input type="submit" value="Submit" [disabled]="!(title|reverse)">
+
+
+
+
+<!--<h5>Reversed string:<span class="text-success">{{title|reverse}}</span></h5>-->
+
+
+<!--{{3.14159 |percent:'3.1-2'|slice:0:6|number:'2.0-1'}}
+<br/>
+{{45/50 |percent}}<br/>
+{{'03/15/18'|date:'dd-MM-yyy'}}</br>
+{{2000|currency:'INR'}}
+{{0.951524 |percent:'2.1-2'}}
+{{[1,2,3,4,5,6]|slice:1:3}}-->

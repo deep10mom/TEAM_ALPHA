@@ -1,0 +1,47 @@
+
+
+
+<app-messenger-app></app-messenger-app>
+
+<div class="topnav">
+        <a class="active" (click)=clicked(1)>Home</a>
+        <a href="#news" (click)=clicked(2)>Login</a>
+        <a href="#contact"(click)=clicked(4)>Register</a>
+        <a href="#contact"(click)=clicked(3)>PlayGround</a>
+        <a href="#about" >About</a>
+      </div>
+      <!--
+<button (click)=clicked(1)>component1</button>
+<br>
+<br>
+<button (click)=clicked(2)>component2</button>
+<br>
+<br>
+<button (click)=clicked(3)>component3</button>
+<br>
+<br>
+<button (click)=clicked(4)>component4</button>
+<br>
+<br>-->
+<div *ngIf="status1"><app-first ></app-first></div>
+<div *ngIf="status2"><app-with-events></app-with-events></div>
+<div *ngIf="status4"><app-registration></app-registration></div>
+<div *ngIf="status3"><app-if></app-if></div>
+
+<!--<app-registration *ngIf="status4"></app-registration>-->
+<!--<div *ngIf="status4"><app-if></app-if></div>-->
+<!-- <app-first></app-first>
+
+
+<app-with-events></app-with-events>
+ <app-registration></app-registration>  
+<app-if></app-if> -->
+
+
+<a href="If">using href</a>
+<br>
+<a routerLink="Pipes">Pipes</a>
+<br>
+
+<a [routerLink]="{footerOutlet:['path']}">Show in footer outlet</a>
+<router-outlet id="footerOutlet"></router-outlet>
